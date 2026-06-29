@@ -14,7 +14,7 @@ if not os.path.exists(DB_FILE):
     colonnes = [
         "Date", "Contrôleur", "Collaborateur", "Tâche",
         "Zone_Propre", "Zone_Rangee", "EPI_Casquette", "EPI_Gilet", 
-        "EPI_Chaussures", "EPI_Gants", "EPI_Cutter",
+        "EPI_Chaussures", "EPI_Gants", "EPI_Test",
         "Posture_Charges", "Posture_Hauteur", "Chariot_3Points", 
         "Chariot_Fourche", "Chariot_Klaxon", "Chariot_Ceinture", 
         "Points_Negatifs", "Bonnes_Pratiques"
@@ -58,7 +58,7 @@ if menu == "📝 Réaliser une VCS":
             epi_gil = st.selectbox("Gilet Haute Visibilité", ["Conforme", "Non Conforme"])
             epi_cha = st.selectbox("Chaussures de sécurité", ["Conforme", "Non Conforme"])
             epi_gan = st.selectbox("Gants", ["Conforme", "Non Conforme"])
-            epi_cut = st.selectbox("État du cutter", ["Conforme", "Non Conforme", "Non Applicable"])
+            epi_test = st.selectbox("Test", ["Conforme", "Non Conforme"])
 
         with c3:
             st.markdown("**🚜 Chariots & Engins**")
